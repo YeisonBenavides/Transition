@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  position: relative;
+  background-color: rgb(7, 7, 7);
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  display: inline-block;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size:18px;
+}
+.active{
+  background-color:rgb(180, 8, 8);
+  border-bottom: solid white;
+}
+
+/*Primera pagina*/
+main{
+  background-color: rgb(18, 107, 18);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+main:hover{
+  background-color:rgb(187, 253, 5);
+  transition: 1s linear;
+  width: 250px;
+  height: 250px; 
+}
+
+/*Segunda pagina*/
+section{
+  background-color: rgb(226, 17, 17);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+section:hover{
+  background-color:rgb(8, 214, 94);
+  transition-property: width, height, background-color, border;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s, 1s, 2s;
+  width: 300px;
+  height: 300px;
+  border: solid 5px yellow
+}
+
+/*Tercera pagina*/
+aside{
+  background-color: rgb(31, 17, 226);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width, height, background-color;
+  transition-duration: 1s;
+  transition-delay: 0s, 0s, 1s;
+}
+aside:hover{
+  background-color:rgb(187, 253, 5);
+  width: 300px;
+  height: 300px; 
+}
+aside>article{
+  background-color: rgb(226, 17, 17);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width, height, border-radius, background-color;
+  transition-duration: 1s;
+  transition-delay: 2s, 2s, 3s, 4s;
+}
+aside:hover article{
+  background-color:rgb(8, 214, 169);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*Cuarta pagina*/
+header{
+  background-color: rgb(17, 219, 226);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width, height, background-color;
+  transition-duration: 1s;
+  transition-delay: 0s, 0s, 1s; 
+}
+header>footer{
+  background-color: yellow;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 170;
+  bottom: 170;
+  margin: auto;
+  transition-property: width, height, left, border-radius, background-color;
+  transition-duration: 1s;
+  transition-delay: 4s, 0s, 3s, 4s;
+}
+header>nav{
+  background-color: yellow;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 170;
+  left: 170;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property: width, height, right, border-radius, background-color;
+  transition-duration: 1s;
+  transition-delay: 4s, 0s, 3s, 4s;
+}
+header:hover{
+  background-color:rgb(54, 223, 104);
+  transition-property: width, height, background-color, border;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s, 2s, 1s;
+  width: 300px;
+  height: 300px;
+}
+header:hover>footer{
+  left: 40px;
+  border-radius: 50%;
+  background-color: rgb(226, 43, 67);
+}
+header:hover>nav{
+  right: 40px;
+  border-radius: 50%;
+  background-color: rgb(25, 10, 238);
+}
+
+/*Quinta pagina*/
+.page5>div{
+  background-color:rgb(243, 9, 9);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property:background-color, width, height;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s, 2s;
+}
+.page5>div>div{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  transition-property:right, top, border-radius;
+  transition-duration: 1s;
+  transition-delay: 3s, 3s, 4s;
+}
+.page5>div>footer{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property:border-radius, background-color ;
+  transition-duration: 1s;
+  transition-delay: 5s, 6s;
+}
+.page5>div>nav{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition-property:left, bottom, border-radius;
+  transition-duration: 1s;
+  transition-delay: 3s, 3s, 4s;
+}
+.page5>div:hover{
+  background-color: rgb(11, 241, 184);
+  width: 300px;
+  height: 300px;
+}
+.page5>div:hover>div{
+top: 25px;
+right: 25px;
+border-radius: 50%;
+}
+.page5>div:hover>nav{
+  bottom: 25px;
+  left:25px;
+  border-radius: 50%;
+}
+.page5>div:hover>footer{
+  border-radius: 50%;
+  background-color: rgb(231, 19, 100);
+}
+
+/*Sexta pagina*/
+.page6>div{
+  background-color:rgb(9, 243, 79);
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property:width, height, border-top, border-right, border-bottom, border-left;
+  transition-duration: 1s;
+  transition-delay: 0s, 1s, 2s, 3s, 4s, 5s;
+}
+.page6>div>div{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  transition-property:right, top, border-radius;
+  transition-duration: 1s;
+  transition-delay: 8s, 8s, 9s;
+}
+.page6>div>footer{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition-property:border-radius, background-color;
+  transition-duration: 1s;
+  transition-delay: 14s, 15s;
+}
+.page6>div>nav{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition-property:left, bottom, border-radius;
+  transition-duration: 1s;
+  transition-delay: 10s, 10s, 11s;
+}
+.page6>div>arr{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition-property: left, top, border-radius;
+  transition-duration: 1s;
+  transition-delay: 6s, 6s, 7s;
+}
+.page6>div>abb{
+  background-color:rgb(208, 255, 0);
+  width: 60px;
+  height: 60px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition-property: right, bottom, border-radius;
+  transition-duration: 1s;
+  transition-delay: 12s, 12s, 13s;
+}
+.page6>div:hover{
+  width: 300px;
+  height: 300px;
+  border-top: solid 6px rgb(119, 0, 255);
+  border-right: solid 6px orange;
+  border-bottom: solid 6px rgb(255, 0, 242);
+  border-left: solid 6px red;  
+}
+.page6>div:hover>arr{
+  top: 25px;
+  left:25px;
+  border-radius: 50%;
+}
+.page6>div:hover>div{
+  top: 25px;
+  right:25px;
+  border-radius: 50%;
+}
+.page6>div:hover>nav{
+  left: 25px;
+  bottom: 25px;
+  border-radius: 50%;
+}
+.page6>div:hover>abb{
+  right: 25px;
+  bottom: 25px;
+  border-radius: 50%;
+}
+.page6>div:hover>footer{
+  border-radius: 50%;
+  background-color: rgb(9, 134, 236);
+}
